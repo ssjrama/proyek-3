@@ -4,6 +4,7 @@ use App\Http\Controllers\API\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\TreatmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,10 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     // admin
     Route::get('/admin', [AdminController::class, 'index']);
+
+    Route::apiResources([
+        'treatment' => TreatmentController::class,
+    ]);
 });
 
 Route::post('/login', [AuthController::class, 'login']);
