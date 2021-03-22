@@ -13,9 +13,19 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->user()->is_admin == 1) {
+            $order = Order::all();
+
+            return response()->json(
+                [
+                    'message' => 'Data data order',
+                    'data' => $order
+                ],
+                200
+            );
+        }
     }
 
     /**
@@ -47,9 +57,17 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function show(Order $order)
+    public function show(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+
+        return response()->json(
+            [
+                'message' => 'Data order',
+                'data' => $order
+            ],
+            200
+        );
     }
 
     /**
@@ -59,9 +77,22 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Order $order)
+    public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+        $order->update([
+            'customer' => $request->user()->id,
+            'treatments' => $request->treatments,
+            'total' => $request->total
+        ]);
+
+        return response()->json(
+            [
+                'message' => 'Pesanan berhasil diupdate',
+                'data' => $order
+            ],
+            200
+        );
     }
 
     /**
@@ -70,8 +101,15 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy(Request $request, $id)
     {
-        //
+        $order = Order::find($id)->delete();
+
+        return response()->json(
+            [
+                'message' => 'Data berhasil dihapus',
+            ],
+            200
+        );
     }
 }
