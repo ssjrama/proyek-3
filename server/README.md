@@ -1,1 +1,1 @@
-## Laravel React boilerplate
+## Laravel Server Side
