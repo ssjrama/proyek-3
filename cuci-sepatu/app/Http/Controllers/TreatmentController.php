@@ -14,7 +14,8 @@ class TreatmentController extends Controller
      */
     public function index()
     {
-        //
+        $treatments = Treatment::all();
+        return view('admin.treatment.index', ['treatments' => $treatments]);
     }
 
     /**
@@ -24,7 +25,7 @@ class TreatmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.treatment.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class TreatmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name' => 'required',
+            'price' => 'required'
+        ]);
+        
+        $treatment = new Treatment;
+        $treatment->name = $request->name;
+        $treatment->price = $request->price;
+        $treatment->save();
+
+        return back()->with('success', 'Treatment Baru Dibuat');
     }
 
     /**
@@ -55,9 +66,10 @@ class TreatmentController extends Controller
      * @param  \App\Models\Treatment  $treatment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Treatment $treatment)
+    public function edit($id)
     {
-        //
+        $treatment = Treatment::find($id);
+        return view('admin.treatment.edit', ['treatment' => $treatment]);
     }
 
     /**
@@ -67,9 +79,15 @@ class TreatmentController extends Controller
      * @param  \App\Models\Treatment  $treatment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Treatment $treatment)
+    public function update(Request $request, $id)
     {
-        //
+        $treatment = Treatment::find($id);
+        $treatment->update([
+            'name' => $request->name,
+            'price' => $request->price
+        ]);
+
+        return redirect('/treatment')->with('success', 'Treatment Berhasil Diubah');
     }
 
     /**
@@ -78,8 +96,9 @@ class TreatmentController extends Controller
      * @param  \App\Models\Treatment  $treatment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Treatment $treatment)
+    public function destroy($id)
     {
-        //
+        $treatment = Treatment::find($id)->delete();
+        return back()->with('success', 'Treatment Berhasil Dihapus');
     }
 }
