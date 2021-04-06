@@ -23,9 +23,9 @@
                 <a href="index.html" class="spur-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
             </header>
             <nav class="dash-nav-list">
-                <a href="index.html" class="dash-nav-item"><i class="fas fa-receipt"></i> Order </a>
-                <a href="index.html" class="dash-nav-item"><i class="fas fa-list"></i> Treatment </a>
-                <a href="index.html" class="dash-nav-item"><i class="fas fa-user"></i> User </a>
+                <a href="/order" class="dash-nav-item"><i class="fas fa-receipt"></i> Order </a>
+                <a href="/treatment" class="dash-nav-item"><i class="fas fa-list"></i> Treatment </a>
+                <a href="/user" class="dash-nav-item"><i class="fas fa-user"></i> User </a>
             </nav>
         </div>
         <div class="dash-app">

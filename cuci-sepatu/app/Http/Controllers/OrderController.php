@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Treatment;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -14,7 +15,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $orders = Order::all();
+        return view('admin.order.index', ['orders' => $orders]);
     }
 
     /**
@@ -24,7 +26,8 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        $treatments = Treatment::all();
+        return view('admin.order.create', ['treatments' => $treatments]);
     }
 
     /**
@@ -35,7 +38,16 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'treatments' => 'required',
+        ]);
+        
+        $order = new Order;
+        $order->customer = $request->user()->id;
+        $order->treatments = $request->treatments;
+        $order->save();
+
+        return back()->with('success', 'Pesanan Baru Dibuat');
     }
 
     /**
@@ -78,8 +90,9 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy($id)
     {
-        //
+        $order = Order::find($id)->delete();
+        return back()->with('success', 'Pesanan Berhasil Dihapus');
     }
 }
