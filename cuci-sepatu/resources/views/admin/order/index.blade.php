@@ -17,7 +17,7 @@
                     @foreach ($orders as $o)
                 <tr>
                     <td>{{$o->id}}</td>
-                    <td>{{$o->customer}}</td>
+                    <td>{{$o->user->name}}</td>
                     <td>
                         @foreach($o->treatments as $t)
                             {{ $t }},
