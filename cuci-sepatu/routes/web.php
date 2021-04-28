@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\TreatmentController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\TreatmentController;
 
 /*
 |--------------------------------------------------------------------------

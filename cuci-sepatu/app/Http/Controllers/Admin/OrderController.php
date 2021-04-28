@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Treatment;
 use Illuminate\Http\Request;
@@ -43,8 +44,9 @@ class OrderController extends Controller
         ]);
         
         $order = new Order;
-        $order->customer = $request->user()->id;
+        $order->user_id = $request->user()->id;
         $order->treatments = $request->treatments;
+        $order->address = $request->address;
         $order->save();
 
         return back()->with('success', 'Pesanan Baru Dibuat');

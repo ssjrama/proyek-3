@@ -56,6 +56,7 @@
     </header>
     <main>
         <!--? slider Area Start-->
+        @include('include.pesan')
         <section class="slider-area hero-overly">
             <div class="slider-active">
                 <!-- Single Slider -->

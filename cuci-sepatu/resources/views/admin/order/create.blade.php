@@ -12,6 +12,10 @@
                 </label>
             </div>
             @endforeach
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <textarea name="address" rows="5" class="form-control"></textarea>
+            </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
