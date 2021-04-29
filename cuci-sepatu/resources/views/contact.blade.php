@@ -54,7 +54,7 @@
                                 <ul id="navigation">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="about">About</a></li>
-                                    <li><a href="services.">Services</a></li>
+                                    <li><a href="services.">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="header-right d-none d-lg-block">
                     <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="#" class="header-btn2">Make an Appointment</a>
+                    <a href="#" class="header-btn2">Login</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
