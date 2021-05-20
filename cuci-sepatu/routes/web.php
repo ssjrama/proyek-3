@@ -32,7 +32,7 @@ Route::get('ordertreatment', function(){
     return view('ordertreatment');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+Route::middleware(['auth:sanctum', 'verified', 'isadmin'])->group(function (){
     Route::get('/dashboard', function () {return view('dashboard');});
 
     Route::resources([

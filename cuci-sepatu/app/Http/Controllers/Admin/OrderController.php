@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Treatment;
+use App\Models\OrderTreatment;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -40,14 +41,21 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'treatments' => 'required',
+            'treatment' => 'required',
         ]);
         
         $order = new Order;
         $order->user_id = $request->user()->id;
-        $order->treatments = $request->treatments;
+        $order->treatment = $request->treatment;
         $order->address = $request->address;
         $order->save();
+
+        foreach($request->treatment as $treatment){
+            $order_treatment = new OrderTreatment;
+            $order_treatment->order_id = $order->id;
+            $order_treatment->treatment_id = $treatment;
+            $order_treatment->save();
+        }
 
         return back()->with('success', 'Pesanan Baru Dibuat');
     }

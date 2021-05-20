@@ -39,12 +39,14 @@ class TreatmentController extends Controller
     {
         $this->validate($request,[
             'name' => 'required',
-            'price' => 'required'
+            'price' => 'required',
+            'duration' => 'required'
         ]);
         
         $treatment = new Treatment;
         $treatment->name = $request->name;
         $treatment->price = $request->price;
+        $treatment->duration = $request->duration;
         $treatment->save();
 
         return back()->with('success', 'Treatment Baru Dibuat');
@@ -85,7 +87,8 @@ class TreatmentController extends Controller
         $treatment = Treatment::find($id);
         $treatment->update([
             'name' => $request->name,
-            'price' => $request->price
+            'price' => $request->price,
+            'duration' => $request->duration
         ]);
 
         return redirect('/treatment')->with('success', 'Treatment Berhasil Diubah');
