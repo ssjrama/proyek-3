@@ -28,6 +28,9 @@ Route::get('services', function(){
 Route::get('contact', function(){
     return view('contact');
 });
+Route::get('ordertreatment', function(){
+    return view('ordertreatment');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function (){
     Route::get('/dashboard', function () {return view('dashboard');});

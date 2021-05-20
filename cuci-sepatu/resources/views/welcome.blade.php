@@ -202,7 +202,7 @@
                 </div>
                 <div class="header-right d-none d-lg-block">
                     <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="#" class="header-btn2">Login</a>
+                    <a href="/login" class="header-btn2">Login</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
