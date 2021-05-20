@@ -17,6 +17,7 @@ class CreateTreatmentsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('price');
+            $table->string('duration');
             $table->timestamps();
         });
     }

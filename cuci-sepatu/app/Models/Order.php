@@ -11,16 +11,16 @@ class Order extends Model
 
     protected $fillable = [
         'user_id',
-        'treatments',
+        'treatment',
         'address',
         'total'
     ];
 
     protected $casts = [
-        'treatments' => 'array'
+        'treatment' => 'array'
     ];
 
-    public function treatment()
+    public function treatments()
     {
         return $this->belongsToMany(Treatment::class);
     }

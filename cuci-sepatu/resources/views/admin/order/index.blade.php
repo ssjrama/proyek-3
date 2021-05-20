@@ -20,7 +20,7 @@
                     <td>{{$o->user->name}}</td>
                     <td>
                         @foreach($o->treatments as $t)
-                            {{ $t }},
+                            {{ $t->id }},
                         @endforeach
                     </td>
                     @if ($o->total)

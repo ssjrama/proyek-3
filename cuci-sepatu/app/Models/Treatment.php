@@ -16,6 +16,7 @@ class Treatment extends Model
      */
     protected $fillable = [
         'name',
-        'price'
+        'price',
+        'duration'
     ];
 }
