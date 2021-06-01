@@ -203,6 +203,13 @@
                 <div class="header-right d-none d-lg-block">
                     <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
                     <a href="/login" class="header-btn2">Login</a>
+
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -224,7 +231,7 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Quality Shoesclean service in your city</h1>
                                     <p data-animation="fadeInLeft" data-delay="0.4s">We take care about cleenness of your cloth</p>
-                                    {{--    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a> --}}
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
                                 </div>
                             </div>
                         </div>
@@ -233,42 +240,14 @@
             </div>
         </section>
         <!-- slider Area End-->
-        <!--? About Area  -->
-        <section class="about-area2 pb-bottom mt-30">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <!-- about-img -->
-                        <div class="about-img ">
-                            <img src="laundry/img/gallery/about1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="about-caption mb-50">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle mb-25">
-                                <h2>About company</h2>
-                            </div>
-                            <p class="mb-20">
-                                The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!
-                            </p>
-                            <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
-
-                            <a href="about" class="btn">About Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Area End -->
-
         <!--? Services Area Start -->
         <section class="services-area pt-top border-bottom pb-20 mb-60">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>This is our Treatment</h2>
+                            <span class="element">Our Process</span>
+                            <h2>This is how we work</h2>
                         </div>
                     </div>
                 </div>
@@ -279,8 +258,9 @@
                                 <img src="laundry/img/icon/services-icon1.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Cleaning</a></h5>
-                                <p>Pencucian bagian dalam dan luar sepatu (Outsole, Midsole, Upper, Insole, Laces)</div>
+                                <h5><a href="services.html">We collect your clothes</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
@@ -289,8 +269,8 @@
                                 <img src="laundry/img/icon/services-icon2.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Polishing</a></h5>
-                                <p>Penyemiran bagian luar sepatu (Midsole dan Upper)</p>
+                                <h5><a href="services.html">Wash your clothes</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
                     </div>
@@ -300,8 +280,8 @@
                                 <img src="laundry/img/icon/services-icon3.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Re-Paint Midsole</a></h5>
-                                <p>Pengecetan ulang warna yang memudar pada bagian midsole sepatu</p>
+                                <h5><a href="services.html">Get delivery</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
                     </div>
@@ -494,7 +474,35 @@
             </div>
         </section>
         <!-- Company achievement End -->
-                <!--?  Map Area start  -->
+        <!--? About Area  -->
+        <section class="about-area2 pb-bottom mt-30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img ">
+                            <img src="laundry/img/gallery/about1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-25">
+                                <h2>About company</h2>
+                            </div>
+                            <p class="mb-20">
+                                The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!
+                            </p>
+                            <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+
+                            <a href="about" class="btn">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!--?  Map Area start  -->
         <div class="Map-area">
             <img src="laundry/img/gallery/Map.png" alt="" class="w-100">
         </div>

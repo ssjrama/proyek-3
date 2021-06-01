@@ -9,6 +9,11 @@
         </div>
 
         <div class="form-group">
+            <label for="duration">Durasi</label>
+            <input type="text" name="duration" class="form-control" value="{{$treatment->name}}">
+        </div>
+
+        <div class="form-group">
             <label for="price">Harga</label>
             <input type="number" name="price" class="form-control" value="{{$treatment->price}}">
         </div>

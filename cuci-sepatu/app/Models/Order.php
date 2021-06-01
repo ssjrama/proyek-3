@@ -10,12 +10,23 @@ class Order extends Model
     use HasFactory;
 
     protected $fillable = [
-        'customer',
-        'treatments',
+        'user_id',
+        'treatment',
+        'address',
         'total'
     ];
 
     protected $casts = [
-        'treatments' => 'array'
+        'treatment' => 'array'
     ];
+
+    public function treatments()
+    {
+        return $this->belongsToMany(Treatment::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

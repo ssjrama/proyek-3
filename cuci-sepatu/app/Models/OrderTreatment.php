@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Treatment extends Model
+class OrderTreatment extends Model
 {
     use HasFactory;
+
+    protected $table = 'order_treatment';
 
     /**
      * The attributes that are mass assignable.
@@ -15,8 +17,7 @@ class Treatment extends Model
      * @var array
      */
     protected $fillable = [
-        'name',
-        'price',
-        'duration'
+        'order_id',
+        'treatment_id'
     ];
 }

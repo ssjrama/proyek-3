@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\TreatmentController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\TreatmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ Route::get('ordertreatment', function(){
     return view('ordertreatment');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+Route::middleware(['auth:sanctum', 'verified', 'isadmin'])->group(function (){
     Route::get('/dashboard', function () {return view('dashboard');});
 
     Route::resources([
