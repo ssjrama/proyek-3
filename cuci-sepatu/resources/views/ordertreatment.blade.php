@@ -122,17 +122,8 @@
                 <input type="text" id="inputProjectLeader" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputStatus"></label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option selected disabled>Pilih Treatment</option>
-                  <option>Cleaning (2-4 Hari)</option>
-                  <option>Polishing (1 Hari)</option>
-                  <option>Re-paint Midsole (2-4 Hari)</option>
-                  <option>Re-paint Upper (4-7 Hari)</option>
-                  <option>Full Re-paint (7-18 Hari)</option>
-                  <option>Costum Re-paint (7-18 Hari)</option>
-                  <option>Re-Glue (1-2 Hari)</option>
-                </select>
+                <label for="inputDescription">Alamat</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
               <div class="form-group">
                 <label for="inputDescription">Deskripsi</label>
