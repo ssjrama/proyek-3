@@ -95,7 +95,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+    <form action= ''>
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -110,6 +110,8 @@
                 </button>
               </div>
             </div> -->
+            
+
             <div class="card-body">
               <div class="form-group">
                 <label for="inputName">Nama Pemesan</label>
@@ -137,10 +139,12 @@
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
             </div>
+           
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
+        
         <div class="col-md-6">
           <div class="card card-secondary">
             <div>
@@ -173,11 +177,12 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <a href="#" class="btn btn-success">Pesan Treatment</a>
+          <button type="submit" class="btn btn-success">Pesan Treatment</button>
           <input type="submit" value="Cancel" class="btn btn-secondary ">
         </div>
       </div>
     </section>
+    </form>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

@@ -135,7 +135,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Laundry | Teamplate</title>
+    <title>Kik.Kinclong</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -201,15 +201,19 @@
                     </div>
                 </div>
                 <div class="header-right d-none d-lg-block">
-                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="/login" class="header-btn2">Login</a>
+                    
 
+                    @auth
                     <div class="header-btn2">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
                         </form>
                     </div>
+                    @else
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
+                    <a href="/login" class="header-btn2">Login</a>
+                    @endauth
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -255,10 +259,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon1.svg" alt="">
+                                <img src="laundry/img/icon/cleaningg.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">We collect your clothes</a></h5>
+                                <h5><a href="ordertreatment">cleaning</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -266,10 +270,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon2.svg" alt="">
+                                <img src="laundry/img/icon/polishing.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Wash your clothes</a></h5>
+                                <h5><a href="ordertreatment">polishing</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -277,10 +281,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon3.svg" alt="">
+                                <img src="laundry/img/icon/reglue.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Get delivery</a></h5>
+                                <h5><a href="oerdertreatment">re-Glue</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>

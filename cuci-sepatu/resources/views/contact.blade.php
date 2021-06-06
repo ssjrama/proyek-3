@@ -28,7 +28,7 @@
                                 <ul id="navigation">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="about">About</a></li>
-                                    <li><a href="services.">Treatment</a></li>
+                                    <li><a href="services">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
@@ -43,8 +43,17 @@
                     </div>
                 </div>
                 <div class="header-right d-none d-lg-block">
+                @auth
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
+                    @else
                     <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
                     <a href="/login" class="header-btn2">Login</a>
+                    @endauth
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">

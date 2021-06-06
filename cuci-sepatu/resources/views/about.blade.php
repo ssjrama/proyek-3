@@ -43,8 +43,17 @@
                     </div>
                 </div>
                 <div class="header-right d-none d-lg-block">
+                     @auth
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
+                    @else
                     <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
                     <a href="/login" class="header-btn2">Login</a>
+                    @endauth
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -104,7 +113,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>This is our Treatment</h2>
+                            <span class="element">Our Process</span>
+                            <h2>This is how we work</h2>
                         </div>
                     </div>
                 </div>
@@ -112,32 +122,33 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon1.svg" alt="">
+                                <img src="laundry/img/icon/cleaningg.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Cleaning</a></h5>
-                                <p>Pencucian bagian dalam dan luar sepatu (Outsole, Midsole, Upper, Insole, Laces)</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon2.svg" alt="">
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Polishing</a></h5>
-                                <p>Penyemiran bagian luar sepatu (Midsole dan Upper)</p>
+                                <h5><a href="ordertreatment">cleaning</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="laundry/img/icon/services-icon3.svg" alt="">
+                                <img src="laundry/img/icon/polishing.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Re-Paint Midsole</a></h5>
-                                <p>Pengecetan ulang warna yang memudar pada bagian midsole sepatu</p>
+                                <h5><a href="ordertreatment">polishing</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center">
+                            <div class="cat-icon">
+                                <img src="laundry/img/icon/reglue.jpeg" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="oerdertreatment">re-Glue</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
                     </div>

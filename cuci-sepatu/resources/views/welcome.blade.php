@@ -135,7 +135,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Laundry | Teamplate</title>
+    <title>Kik.Kinclong</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -201,15 +201,19 @@
                     </div>
                 </div>
                 <div class="header-right d-none d-lg-block">
-                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="/login" class="header-btn2">Login</a>
+                    
 
+                    @auth
                     <div class="header-btn2">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
                         </form>
                     </div>
+                    @else
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
+                    <a href="/login" class="header-btn2">Login</a>
+                    @endauth
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
