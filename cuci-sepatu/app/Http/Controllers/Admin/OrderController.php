@@ -47,6 +47,8 @@ class OrderController extends Controller
         $order = new Order;
         $order->user_id = $request->user()->id;
         $order->address = $request->address;
+        $order->description = $request->description;
+        $order->item_name = $request->item_name;
         $order->save();
 
         foreach($request->treatment as $treatment){
@@ -76,9 +78,11 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function edit(Order $order)
+    public function edit($id)
     {
-        //
+        $order = Order::find($id);
+        $treatments = Treatment::all();
+        return view('admin.order.edit', ['treatments' => $treatments, 'order' => $order]);
     }
 
     /**
@@ -88,9 +92,15 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Order $order)
+    public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+        $order->update([
+            'address' => $request->address,
+            'description' => $request->description,
+            'item_name' => $request->item_name
+        ]);
+        return redirect('order')->with('success', 'Treatment Berhasil Diubah');
     }
 
     /**

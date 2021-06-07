@@ -18,6 +18,8 @@ class CreateOrdersTable extends Migration
             $table->string('user_id');
             $table->integer('total')->nullable();
             $table->text('address');
+            $table->text('item_name'); 
+            $table->text('description'); 
             $table->timestamps();
         });
     }
