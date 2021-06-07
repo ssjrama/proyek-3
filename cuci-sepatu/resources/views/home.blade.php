@@ -177,14 +177,14 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="laundry/img/logo/logo.png" alt=""></a>
+                        <a href="/home"><img src="laundry/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="/home">Home</a></li>
                                     <li><a href="about">About</a></li>
                                     <li><a href="/services">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a> --}}
@@ -211,7 +211,7 @@
                         </form>
                     </div>
                     @else
-                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt="">+62 896-8536-6681</a>
                     <a href="/login" class="header-btn2">Login</a>
                     @endauth
                 </div>
@@ -234,7 +234,7 @@
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Quality Shoesclean service in your city</h1>
-                                    <p data-animation="fadeInLeft" data-delay="0.4s">We take care about cleenness of your cloth</p>
+                                    
                                     <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
                                 </div>
                             </div>
@@ -348,23 +348,7 @@
         </section>
         <!-- Offer-services End  -->
         <!--? Want To work -->
-        <section class="container">
-            <section class="wantToWork-area" data-background="laundry/img/gallery/section_bg01.png">
-                <div class="wants-wrapper w-padding2">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-xl-8 col-lg-9 col-md-7">
-                            <div class="wantToWork-caption wantToWork-caption2">
-                                <h2>Call us for a service</h2>
-                                <p>We deliver the goods to the most complicated places on earth</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-5">
-                            <a href="#" class="btn wantToWork-btn"><img src="laundry/img/icon/call2.png" alt=""> Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+
         <!-- Want To work End -->
         <!-- Testimonials_start -->
         <section class="testimonials-area testimonials-overly  position-relative">
@@ -485,7 +469,7 @@
                     <div class="col-lg-6 col-md-12">
                         <!-- about-img -->
                         <div class="about-img ">
-                            <img src="laundry/img/gallery/about1.png" alt="">
+                            <img src="laundry/img/gallery/about1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
@@ -522,7 +506,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="laundry/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="/home"><img src="laundry/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

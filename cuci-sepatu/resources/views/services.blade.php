@@ -28,7 +28,7 @@
                                 <ul id="navigation">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="about">About</a></li>
-                                    <li  class="active"><a href="services.html">Treatment</a></li>
+                                    <li  class="active"><a href="/services">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
@@ -51,7 +51,7 @@
                         </form>
                     </div>
                     @else
-                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> +62 896-8536-6681</a>
                     <a href="/login" class="header-btn2">Login</a>
                     @endauth
                 </div>
@@ -153,7 +153,7 @@
                                     <img src="laundry/img/icon/offers-icon1.png" alt="">
                                 </div>
                                 <div class="cat-cap">
-                                    <h5><a href="services.html">Cloth laundry</a></h5>
+                                    <h5><a href="treatment">Cloth laundry</a></h5>
                                     <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                                     <img src="laundry/img/icon/offers-icon1.png" alt="">
                                 </div>
                                 <div class="cat-cap">
-                                    <h5><a href="services.html">Cloth ironing</a></h5>
+                                    <h5><a href="treatment">Cloth ironing</a></h5>
                                     <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
         </section>
         <!-- Offer-services End  -->
         <!--? Want To work -->
-        <section class="container">
+        <!-- <section class="container">
             <section class="wantToWork-area" data-background="laundry/img/gallery/section_bg01.png">
                 <div class="wants-wrapper w-padding2">
                     <div class="row align-items-center justify-content-between">
@@ -199,7 +199,7 @@
                     </div>
                 </div>
             </section>
-        </section>
+        </section> -->
         <!-- Want To work End -->
         <!--? Testimonials_start -->
         <section class="testimonials-area testimonials-overly  position-relative">

@@ -95,7 +95,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-    <form action= ''>
+    <form action= "">
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -115,11 +115,11 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputName">Nama Pemesan</label>
-                <input type="text" id="inputName" class="form-control">
+                <input type="text" id="user_id" class="form-control">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Merk/Nama Sepatu</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+                <input type="text" id="" class="form-control">
               </div>
               <div class="form-group">
                 <label for="inputDescription">Alamat</label>
