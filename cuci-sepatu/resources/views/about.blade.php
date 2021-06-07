@@ -94,12 +94,12 @@
                         <div class="about-caption mb-50">
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-25">
-                                <h2>About company</h2>
+                                <h2>Kik.Kinclong Shoes Clean</h2>
                             </div>
                             <p class="mb-20">
-                                The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!
+                               <h2> Kik.Kinclong merupakan jasa cuci sepatu yang berada di karangampel, Mundu, Kabupaten Indramayu, Jawa Barat 45283</h2>
                             </p>
-                            <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            
 
                             
                         </div>
