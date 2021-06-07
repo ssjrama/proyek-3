@@ -16,6 +16,99 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="./laundry/css/adminlte.min.css">
 </head>
+<<<<<<< HEAD
+=======
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light"> -->
+    <!-- Left navbar links -->
+    <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul> -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <!-- Logo -->
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html"><img src="laundry/img/logo/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu-wrapper  d-flex align-items-center">
+                        <!-- Main-menu -->
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li  class="active"><a href="/services">Treatment</a></li>
+                                    {{-- <li><a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog_details.html">Blog Details</a></li>
+                                            <li><a href="elements.html">Element</a></li>
+                                        </ul>
+                                    </li> --}}
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right d-none d-lg-block">
+                @auth
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
+                    @else
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> +62 896-8536-6681</a>
+                    <a href="/login" class="header-btn2">Login</a>
+                    @endauth
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                    <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li> -->
+>>>>>>> 1b4e785af5b8495675addb73fbe87c899c7761a7
        <!-- CSS here -->
     <link rel="stylesheet" href="laundry/css/bootstrap.min.css">
     <link rel="stylesheet" href="laundry/css/owl.carousel.min.css">
@@ -93,7 +186,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-    <form action= ''>
+    <form action= "">
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -123,7 +216,7 @@
                 </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Merk/Nama Sepatu</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+                <input type="text" id="" class="form-control">
               </div>
               <div class="form-group">
                 <label for="inputDescription">Alamat</label>
@@ -140,9 +233,9 @@
           <!-- /.card -->
         </div>
         
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div class="card card-secondary">
-            <div>
+            <div> -->
               <!-- <h3 class="card-title">Budget</h3> -->
 
               <!-- <div class="card-tools">
@@ -150,7 +243,7 @@
                   <i class="fas fa-minus"></i>
                 </button>
               </div> -->
-            </div>
+            <!-- </div> -->
             <!-- <div class="card-body">
               <div class="form-group">
                 <label for="inputEstimatedBudget">Estimated budget</label>
@@ -182,12 +275,12 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
+  <!-- <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.1.0
     </div>
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+  </footer> -->
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
