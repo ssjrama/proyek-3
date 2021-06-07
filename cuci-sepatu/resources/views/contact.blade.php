@@ -28,7 +28,7 @@
                                 <ul id="navigation">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="about">About</a></li>
-                                    <li><a href="services.">Treatment</a></li>
+                                    <li><a href="services">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
@@ -43,8 +43,17 @@
                     </div>
                 </div>
                 <div class="header-right d-none d-lg-block">
-                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> (08) 728 256 266</a>
+                @auth
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
+                    @else
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> +62 896-8536-6681</a>
                     <a href="/login" class="header-btn2">Login</a>
+                    @endauth
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -150,56 +159,56 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <h3>Jatibarang - Karangampel.</h3>
+                                <p>Kab.Indramayu 45283</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3>+62 896-8536-6681</h3>
+                                <p>Senin s/d Jumat 09.00 - 17.00</p>
                             </div>
                         </div>
-                        <div class="media contact-info">
+                        <!-- <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
                                 <h3>support@colorlib.com</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact Area End -->
     </main>
-    <footer>
-        <!-- Footer Start-->
+    <!-- <footer>
+        Footer Start
         <div class="footer-area footer-padding">
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                      <div class="single-footer-caption mb-50">
                        <div class="single-footer-caption mb-30">
-                        <!-- logo -->
-                        <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="laundry/img/logo/logo2_footer.png" alt=""></a>
+                        logo -->
+                        <!-- <div class="footer-logo mb-35"> -->
+                            <!-- <a href="index.html"><img src="laundry/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
                                 <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- social -->
-                        <div class="footer-social">
+                        <!-- <div class="footer-social">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-pinterest-p"></i></a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                     <div class="footer-tittle">
@@ -213,8 +222,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+            </div> -->
+            <!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                     <div class="footer-tittle">
                         <h4>Get in touch</h4>
@@ -227,7 +236,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --> -->
 </div>
 <!-- footer-bottom area -->
 <div class="footer-bottom-area section-bg2" data-background="laundry/img/gallery/footer-bg.png">

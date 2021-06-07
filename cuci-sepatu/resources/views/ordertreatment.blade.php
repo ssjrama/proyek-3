@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pemesanan Treatment</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pesan Treatment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="laundry/img/favicon.ico">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,9 +20,9 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light"> -->
     <!-- Left navbar links -->
-    <ul class="navbar-nav">
+    <!-- <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
@@ -28,8 +32,57 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
-    </ul>
-
+    </ul> -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <!-- Logo -->
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="/"><img src="laundry/img/logo/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu-wrapper  d-flex align-items-center">
+                        <!-- Main-menu -->
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li  class="active"><a href="/services">Treatment</a></li>
+                                    {{-- <li><a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog_details.html">Blog Details</a></li>
+                                            <li><a href="elements.html">Element</a></li>
+                                        </ul>
+                                    </li> --}}
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right d-none d-lg-block">
+                @auth
+                    <div class="header-btn2">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                    </div>
+                    @else
+                    <a href="#" class="header-btn1"><img src="laundry/img/icon/call.png" alt=""> +62 896-8536-6681</a>
+                    <a href="/login" class="header-btn2">Login</a>
+                    @endauth
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                    <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
@@ -68,15 +121,18 @@
     <link rel="stylesheet" href="laundry/css/slick.css">
     <link rel="stylesheet" href="laundry/css/nice-select.css">
     <link rel="stylesheet" href="laundry/css/style.css">
-
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-      </nav>
-      <!-- /.sidebar-menu -->
+    <body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="laundry/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.sidebar -->
-  </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -95,7 +151,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+    <form action= "">
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -110,40 +166,41 @@
                 </button>
               </div>
             </div> -->
-            <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Nama Pemesan</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
+            <div class="form-group">
+                  <!-- <label>Pilih Treatment</label> -->
+                  <select class="form-control form-control-lg" style="width: 100%;">
+                    <option selected="selected">Pilih Treatment</option>
+                    <option>Cleaning</option>
+                    <option>Polishing</option>
+                    <option>Re-Glue</option>
+                    <option>Re-Paint Midsole</option>
+                    <option>Re-Paint Upper</option>
+                    <option>Full Re-Paint</option>
+                    <option>Costum Re-Paint</option>
+                  </select>
+                </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Merk/Nama Sepatu</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+                <input type="text" id="" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputStatus"></label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option selected disabled>Pilih Treatment</option>
-                  <option>Cleaning (2-4 Hari)</option>
-                  <option>Polishing (1 Hari)</option>
-                  <option>Re-paint Midsole (2-4 Hari)</option>
-                  <option>Re-paint Upper (4-7 Hari)</option>
-                  <option>Full Re-paint (7-18 Hari)</option>
-                  <option>Costum Re-paint (7-18 Hari)</option>
-                  <option>Re-Glue (1-2 Hari)</option>
-                </select>
+                <label for="inputDescription">Alamat</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
               <div class="form-group">
                 <label for="inputDescription">Deskripsi</label>
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
             </div>
+           
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
-        <div class="col-md-6">
+        
+        <!-- <div class="col-md-6">
           <div class="card card-secondary">
-            <div>
+            <div> -->
               <!-- <h3 class="card-title">Budget</h3> -->
 
               <!-- <div class="card-tools">
@@ -151,7 +208,7 @@
                   <i class="fas fa-minus"></i>
                 </button>
               </div> -->
-            </div>
+            <!-- </div> -->
             <!-- <div class="card-body">
               <div class="form-group">
                 <label for="inputEstimatedBudget">Estimated budget</label>
@@ -173,21 +230,22 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <a href="#" class="btn btn-success">Pesan Treatment</a>
+          <button type="submit" class="btn btn-success">Pesan Treatment</button>
           <input type="submit" value="Cancel" class="btn btn-secondary ">
         </div>
       </div>
     </section>
+    </form>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
+  <!-- <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.1.0
     </div>
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+  </footer> -->
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

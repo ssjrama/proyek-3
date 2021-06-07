@@ -28,9 +28,14 @@ Route::get('services', function(){
 Route::get('contact', function(){
     return view('contact');
 });
-Route::get('ordertreatment', function(){
-    return view('ordertreatment');
+Route::middleware(['auth:web'])->group(function(){
+    Route::get('ordertreatment', function(){
+        return view('ordertreatment');
+    });
 });
+Route::get('home',function(){
+    return view('home');
+})->name('home');
 
 Route::middleware(['auth:sanctum', 'verified', 'isadmin'])->group(function (){
     Route::get('/dashboard', function () {return view('dashboard');});
