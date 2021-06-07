@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\TreatmentController;
+use App\Http\Controllers\User\UserOrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +29,13 @@ Route::get('services', function(){
 Route::get('contact', function(){
     return view('contact');
 });
+
 Route::middleware(['auth:web'])->group(function(){
     Route::get('ordertreatment', function(){
         return view('ordertreatment');
     });
 });
+
 Route::get('home',function(){
     return view('home');
 })->name('home');
@@ -43,5 +46,11 @@ Route::middleware(['auth:sanctum', 'verified', 'isadmin'])->group(function (){
     Route::resources([
         'treatment' => TreatmentController::class,
         'order' => OrderController::class,
+    ]);
+});
+
+Route::middleware(['auth:sanctum'])->prefix('user')->group(function (){
+    Route::resources([
+        'order' => UserOrderController::class,
     ]);
 });
