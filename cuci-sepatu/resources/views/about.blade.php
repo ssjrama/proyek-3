@@ -71,7 +71,8 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2">
-                                <h2>Tentang Kik.Kinclong</h2>
+                                <h2>Tentang</h2>
+                                <h2>Kik.Kinclong</2>
                             </div>
                         </div>
                     </div>
@@ -100,7 +101,7 @@
                             </p>
                             <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
 
-                            <a href="about" class="btn">About Us</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
         </section>
         <!-- About Area End -->
         <!--? Services Area Start -->
-        <section class="services-area pt-top border-bottom pb-20 mb-60">
+        <!-- <section class="services-area pt-top border-bottom pb-20 mb-60">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -123,12 +124,12 @@
                         <div class="single-cat text-center">
                             <div class="cat-icon">
                                 <img src="laundry/img/icon/cleaningg.jpeg" alt="">
-                            </div>
-                            <div class="cat-cap">
+                            </div> -->
+                            <!-- <div class="cat-cap">
                                 <h5><a href="ordertreatment">cleaning</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
-                            </div>
-                        </div>
+                            </div> -->
+                        <!-- </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
@@ -136,9 +137,9 @@
                                 <img src="laundry/img/icon/polishing.jpeg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="ordertreatment">polishing</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
-                            </div>
+                                <h5><a href="ordertreatment">polishing</a></h5> -->
+                                <!-- <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p> -->
+                            <!-- </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Services End -->
         <!--? Want To work -->
         <!-- <section class="container">
@@ -176,13 +177,13 @@
         </section> -->
         <!-- Want To work End -->
         <!--? Testimonials_start -->
-        <section class="testimonials-area testimonials-overly  position-relative">
+        <!-- <section class="testimonials-area testimonials-overly  position-relative">
             <div class="container">
                 <div class="border-bottom section-padding40 ">
                     <div class="row">
-                        <div class="col-xl-12 ">
+                        <div class="col-xl-12 "> -->
                             <!-- testmonial-image -->
-                            <div class="testmonial-nav text-center">
+                            <!-- <div class="testmonial-nav text-center">
                                 <div class="testmonial-thumb">
                                     <img src="laundry/img/gallery/testimonila1.png" alt="">
                                 </div>
@@ -195,9 +196,9 @@
                                 <div class="testmonial-thumb">
                                     <img src="laundry/img/gallery/testimonila2.png" alt="">
                                 </div>
-                            </div>
-                            <div class="testmonial-item-active text-center">
-                                <!-- testimonial-single-items -->
+                            </div> -->
+                            <!-- <div class="testmonial-item-active text-center">
+                                testimonial-single-items
                                 <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
@@ -208,9 +209,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> --> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -220,9 +221,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -232,7 +233,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -288,11 +289,11 @@
         </section> -->
         <!-- Company achievement End -->
         <!--?  Map Area start  -->
-        <div class="Map-area">
+        <!-- <div class="Map-area">
             <img src="laundry/img/gallery/Map.png" alt="" class="w-100">
-        </div>
+        </div> -->
         <!-- Map Area End -->
-    </main>
+    <!-- </main> -->
     <!-- <footer>
          Footer Start-->
         <!-- <div class="footer-area footer-padding">
@@ -353,14 +354,14 @@
     <div class="container">
         <div class="footer-border">
            <div class="row d-flex align-items-center">
-               <div class="col-xl-12 ">
+               <!-- <div class="col-xl-12 ">
                    <div class="footer-copy-right text-center">
                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                          <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                      </div>
+                      <!-- </div>
                   </div>
-              </div>
+              </div> --> 
           </div>
       </div>
   </div>

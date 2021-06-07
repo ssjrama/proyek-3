@@ -233,7 +233,7 @@
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
                                 <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Quality Shoesclean service in your city</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Ayo cuci sepatumu disini!</h1>
                                     <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
                                 </div>
                             </div>
@@ -284,6 +284,29 @@
                             </div>
                             <div class="cat-cap">
                                 <h5><a href="oerdertreatment">re-Glue</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center">
+                            <div class="cat-icon">
+                                <img src="laundry/img/icon/rmid.jpg" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="ordertreatment">Re-Paint Midsole</a></h5>
+                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center">
+                            <div class="cat-icon">
+                                <img src="laundry/img/icon/rupp.jpg" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="ordertreatment">Re-Paint Upper</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -366,13 +389,13 @@
         </section> -->
         <!-- Want To work End -->
         <!-- Testimonials_start -->
-        <section class="testimonials-area testimonials-overly  position-relative">
+        <!-- <section class="testimonials-area testimonials-overly  position-relative">
             <div class="container">
                 <div class="border-bottom section-padding40 ">
                     <div class="row">
                         <div class="col-xl-12 ">
-                            <!-- testmonial-image -->
-                            <div class="testmonial-nav text-center">
+                             testmonial-image -->
+                            <!-- <div class="testmonial-nav text-center">
                                 <div class="testmonial-thumb">
                                     <img src="laundry/img/gallery/testimonila1.png" alt="">
                                 </div>
@@ -386,9 +409,9 @@
                                     <img src="laundry/img/gallery/testimonila2.png" alt="">
                                 </div>
                             </div>
-                            <div class="testmonial-item-active text-center">
+                            <div class="testmonial-item-active text-center"> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -398,9 +421,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -410,9 +433,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -427,8 +450,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div> -->
+        </section> -->
         <!-- Testimonials_end -->
         <!--? Company achievement Start -->
         <!-- <section class="services-area section-padding40 fix">

@@ -233,7 +233,7 @@
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
                                 <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Quality Shoesclean service in your city</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Ayo Cuci Sepatumu Disini!</h1>
                                     
                                     <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
                                 </div>
@@ -307,7 +307,7 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="laundry/img/gallery/offers1.png" alt="" class=" w-100">
+                            <img src="laundry/img/gallery/offers1.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -340,7 +340,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="laundry/img/gallery/offers4.png" alt="" class=" w-100">
+                            <img src="laundry/img/gallery/offers4.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                 </div>
@@ -351,13 +351,13 @@
 
         <!-- Want To work End -->
         <!-- Testimonials_start -->
-        <section class="testimonials-area testimonials-overly  position-relative">
+        <!-- <section class="testimonials-area testimonials-overly  position-relative">
             <div class="container">
                 <div class="border-bottom section-padding40 ">
                     <div class="row">
-                        <div class="col-xl-12 ">
+                        <div class="col-xl-12 "> -->
                             <!-- testmonial-image -->
-                            <div class="testmonial-nav text-center">
+                            <!-- <div class="testmonial-nav text-center">
                                 <div class="testmonial-thumb">
                                     <img src="laundry/img/gallery/testimonila1.png" alt="">
                                 </div>
@@ -370,10 +370,10 @@
                                 <div class="testmonial-thumb">
                                     <img src="laundry/img/gallery/testimonila2.png" alt="">
                                 </div>
-                            </div>
-                            <div class="testmonial-item-active text-center">
+                            </div> -->
+                            <!-- <div class="testmonial-item-active text-center"> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -383,9 +383,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -395,9 +395,9 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
+                                </div> -->
                                 <!-- testimonial-single-items -->
-                                <div class="testmonial-item ">
+                                <!-- <div class="testmonial-item ">
                                     <p class="pera">The automated process starts as soon as your clothes go into the<br> machine. The outcome is gleaming clothes!</p>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
@@ -407,13 +407,13 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <p> - Rupaya</p>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Testimonials_end -->
         <!--? Company achievement Start -->
         <section class="services-area section-padding40 fix">
@@ -463,19 +463,19 @@
         </section>
         <!-- Company achievement End -->
         <!--? About Area  -->
-        <section class="about-area2 pb-bottom mt-30">
+        <!-- <section class="about-area2 pb-bottom mt-30">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12"> -->
                         <!-- about-img -->
-                        <div class="about-img ">
+                        <!-- <div class="about-img ">
                             <img src="laundry/img/gallery/about1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="about-caption mb-50">
+                        <div class="about-caption mb-50"> -->
                             <!-- Section Tittle -->
-                            <div class="section-tittle mb-25">
+                            <!-- <div class="section-tittle mb-25">
                                 <h2>About company</h2>
                             </div>
                             <p class="mb-20">
@@ -488,7 +488,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- About Area End -->
         <!--?  Map Area start  -->
         <div class="Map-area">
