@@ -46,7 +46,6 @@ class OrderController extends Controller
         
         $order = new Order;
         $order->user_id = $request->user()->id;
-        $order->treatment = $request->treatment;
         $order->address = $request->address;
         $order->save();
 
