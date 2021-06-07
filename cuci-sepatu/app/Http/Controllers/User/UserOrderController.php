@@ -16,7 +16,7 @@ class UserOrderController extends Controller
     public function index()
     {
         $treatments = Treatment::all();
-        return view('ordertreatment', ['treatments' => $treatments]);
+        return view('user.order.index', ['treatments' => $treatments]);
     }
 
     /**
