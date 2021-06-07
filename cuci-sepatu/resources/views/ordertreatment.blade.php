@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pemesanan Treatment</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pesan Treatment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="laundry/img/favicon.ico">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -12,47 +16,6 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="./laundry/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </li> -->
        <!-- CSS here -->
     <link rel="stylesheet" href="laundry/css/bootstrap.min.css">
     <link rel="stylesheet" href="laundry/css/owl.carousel.min.css">
@@ -68,15 +31,50 @@
     <link rel="stylesheet" href="laundry/css/slick.css">
     <link rel="stylesheet" href="laundry/css/nice-select.css">
     <link rel="stylesheet" href="laundry/css/style.css">
-
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-      </nav>
-      <!-- /.sidebar-menu -->
+    <body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="laundry/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.sidebar -->
-  </aside>
-
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <!-- Logo -->
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html"><img src="laundry/img/logo/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu-wrapper  d-flex align-items-center">
+                        <!-- Main-menu -->
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="/services">Treatment</a></li>
+                                    {{-- <li><a href="blog.html">Blog</a> --}}
+                                        {{-- <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog_details.html">Blog Details</a></li>
+                                            <li><a href="elements.html">Element</a></li>
+                                        </ul>
+                                    </li> --}}
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+              </div>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -110,13 +108,19 @@
                 </button>
               </div>
             </div> -->
-            
-
-            <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Nama Pemesan</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
+            <div class="form-group">
+                  <!-- <label>Pilih Treatment</label> -->
+                  <select class="form-control form-control-lg" style="width: 100%;">
+                    <option selected="selected">Pilih Treatment</option>
+                    <option>Cleaning</option>
+                    <option>Polishing</option>
+                    <option>Re-Glue</option>
+                    <option>Re-Paint Midsole</option>
+                    <option>Re-Paint Upper</option>
+                    <option>Full Re-Paint</option>
+                    <option>Costum Re-Paint</option>
+                  </select>
+                </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Merk/Nama Sepatu</label>
                 <input type="text" id="inputProjectLeader" class="form-control">
