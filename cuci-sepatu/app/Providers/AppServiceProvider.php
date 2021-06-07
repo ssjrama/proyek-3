@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
             public function toResponse($request)
             {
                 if($request -> user() -> is_admin == 1){
-                    return redirect('/dashboard');
+                    return redirect('/order');
                 }
                 return redirect('/home');
             }
