@@ -329,7 +329,7 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="laundry/img/gallery/offers1.png" alt="" class=" w-100">
+                            <img src="laundry/img/gallery/offers1.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -362,7 +362,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="laundry/img/gallery/offers4.png" alt="" class=" w-100">
+                            <img src="laundry/img/gallery/offers4.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                 </div>
