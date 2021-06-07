@@ -26,7 +26,7 @@
                         <div class="main-menu d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="/">Home</a></li>
+                                    <li><a href="home">Home</a></li>
                                     <li><a href="about">About</a></li>
                                     <li  class="active"><a href="/services">Treatment</a></li>
                                     {{-- <li><a href="blog.html">Blog</a>
