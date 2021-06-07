@@ -170,13 +170,9 @@
                   <!-- <label>Pilih Treatment</label> -->
                   <select class="form-control form-control-lg" style="width: 100%;">
                     <option selected="selected">Pilih Treatment</option>
-                    <option>Cleaning</option>
-                    <option>Polishing</option>
-                    <option>Re-Glue</option>
-                    <option>Re-Paint Midsole</option>
-                    <option>Re-Paint Upper</option>
-                    <option>Full Re-Paint</option>
-                    <option>Costum Re-Paint</option>
+                    @foreach ($treatments as $t)
+                        <option name="treatment[]" value="{{$t->id}}">{{$t->name}}</option>
+                    @endforeach
                   </select>
                 </div>
               <div class="form-group">

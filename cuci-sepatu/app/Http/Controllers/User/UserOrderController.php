@@ -37,7 +37,23 @@ class UserOrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'treatment' => 'required',
+        ]);
+        
+        $order = new Order;
+        $order->user_id = $request->user()->id;
+        $order->address = $request->address;
+        $order->save();
+
+        foreach($request->treatment as $treatment){
+            $order_treatment = new OrderTreatment;
+            $order_treatment->order_id = $order->id;
+            $order_treatment->treatment_id = $treatment;
+            $order_treatment->save();
+        }
+
+        return back()->with('success', 'Pesanan Baru Dibuat');
     }
 
     /**

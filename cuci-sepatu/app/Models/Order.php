@@ -16,10 +16,6 @@ class Order extends Model
         'total'
     ];
 
-    protected $casts = [
-        'treatment' => 'array'
-    ];
-
     public function treatments()
     {
         return $this->belongsToMany(Treatment::class);
