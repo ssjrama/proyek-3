@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\TreatmentController;
 use App\Http\Controllers\User\UserOrderController;
+use App\Models\Treatment;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,8 @@ Route::get('contact', function(){
 
 Route::middleware(['auth:web'])->group(function(){
     Route::get('ordertreatment', function(){
-        return view('ordertreatment');
+        $treatments = Treatment::all();
+        return view('ordertreatment', ['treatments' => $treatments]);
     });
 });
 

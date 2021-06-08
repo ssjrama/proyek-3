@@ -151,7 +151,8 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-    <form action= "">
+    <form action="/user/order" method="POST" enctype="multipart/form-data">
+    @csrf
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -168,28 +169,24 @@
             </div> -->
             <div class="form-group">
                   <!-- <label>Pilih Treatment</label> -->
-                  <select class="form-control form-control-lg" style="width: 100%;">
-                    <option selected="selected">Pilih Treatment</option>
-                    <option>Cleaning</option>
-                    <option>Polishing</option>
-                    <option>Re-Glue</option>
-                    <option>Re-Paint Midsole</option>
-                    <option>Re-Paint Upper</option>
-                    <option>Full Re-Paint</option>
-                    <option>Costum Re-Paint</option>
+                  <select name="treatment[]" class="form-control form-control-lg" style="width: 100%;">
+                    <option>Pilih Treatment</option>
+                    @foreach ($treatments as $t)
+                        <option value="{{$t->id}}">{{$t->name}}</option>
+                    @endforeach
                   </select>
                 </div>
               <div class="form-group">
-                <label for="inputProjectLeader">Merk/Nama Sepatu</label>
-                <input type="text" id="" class="form-control">
+                <label for="item_name">Nama / Merk sepatu</label>
+                <input type="text" name="item_name" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputDescription">Alamat</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                  <label for="address">Alamat</label>
+                  <textarea name="address" rows="5" class="form-control"></textarea>
               </div>
               <div class="form-group">
-                <label for="inputDescription">Deskripsi</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                  <label for="description">Deskripsi</label>
+                  <textarea name="description" rows="5" class="form-control"></textarea>
               </div>
             </div>
            
