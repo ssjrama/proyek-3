@@ -4,6 +4,8 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Treatment;
+use App\Models\Order;
+use App\Models\OrderTreatment;
 use Illuminate\Http\Request;
 
 class UserOrderController extends Controller
@@ -44,6 +46,8 @@ class UserOrderController extends Controller
         $order = new Order;
         $order->user_id = $request->user()->id;
         $order->address = $request->address;
+        $order->description = $request->description;
+        $order->item_name = $request->item_name;
         $order->save();
 
         foreach($request->treatment as $treatment){
